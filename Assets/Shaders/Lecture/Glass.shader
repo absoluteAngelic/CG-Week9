@@ -9,13 +9,15 @@ Shader "Glass"
         _FresnelIntensity ("Fresnel Intensity", Range(0, 2)) = 1
         _EmissionColor ("Emission Color", Color) = (0,0,0,0)
         _TintIntensity ("Tint Intensity", Range(1, 5)) = 1.5
+        _Transparency ("Transparency", Range(0,1)) = 1
     }
     SubShader
     {
-        Tags { "Queue" = "Transparent" "RenderPipeline" = "UniversalRenderPipeline" }
+        Tags { "Queue" = "Transparent" "Render" = "Transparent" "RenderPipeline" = "UniversalRenderPipeline" }
 
         Pass
         {
+            Blend SrcAlpha OneMinusSrcAlpha
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -58,6 +60,7 @@ Shader "Glass"
             float _FresnelIntensity;
             float _TintIntensity;
             float4 _EmissionColor;
+            float _Transparency;
 
             // Vertex shader (extrusion based on vertex normal, not bump map)
             v2f vert(appdata v)
@@ -117,6 +120,8 @@ Shader "Glass"
 
                 // Gamma correction for vibrancy
                 col.rgb = pow(col.rgb, 1.0 / 2.2);
+
+                col.a = 1 - _Transparency;
 
                 return col;
             }
