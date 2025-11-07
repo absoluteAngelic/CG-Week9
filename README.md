@@ -20,4 +20,4 @@ Scrolling Water Shader:
 Waves Water Shader:
 <img width="1709" height="690" alt="image" src="https://github.com/user-attachments/assets/eec8e484-020e-43be-9d47-2714e82a6cef" />
 
-Some of the shaders had bugs and had to be fixed which took some time, but overall I understood these shaders quickly and most of them implemented smoothly. 
+Some of the shaders had bugs and had to be fixed which took some time, but overall I understood these shaders quickly and most of them implemented smoothly. I really enjoyed seeing how waves can be made with shaders instead of complex C# code. The things I learned in this activity made me more well-prepared for the exam, and I'll be taking a closer look into all of these shaders before the exam.
