@@ -2,7 +2,7 @@
 
 I implemented a partially transparent glass shader, a UV tiler/scaler shader, a simple shadow shader that supports shadows cast by the model onto itself, a shadow shader that supports a texture and customizable shadow colour and can cast onto other objects, a water shader that scrolls two different textures on each other to give the illusion of flowing water, and a water shader that simulates waves with vertex displacement.
 
-I implemented all of the shaders sucecssfully and had fun tweaking the values and seeing what can be done with them. Some of the shaders had bugs and had to be fixed which took some time, but overall I understood these shaders quickly and most of them implemented smoothly. I really enjoyed seeing how waves can be made with shaders instead of complex C# code. The things I learned in this activity made me more well-prepared for the exam, and I'll be taking a closer look into all of these shaders before the exam.
+I implemented all of the shaders sucecssfully and had fun tweaking the values and seeing what can be done with them. Some of the shaders had bugs and had to be fixed which took some time (the glass shader needed to have transparency added to it, and the Texture/Complex Shadow shader needed to invert the shadowAmount variable), but overall I understood these shaders quickly and most of them implemented smoothly. I really enjoyed seeing how waves can be made with shaders instead of complex C# code. The things I learned in this activity made me more well-prepared for the exam, and I'll be taking a closer look into all of these shaders before the exam.
 
 ---
 
