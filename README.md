@@ -4,6 +4,8 @@ I implemented a partially transparent glass shader, a UV tiler/scaler shader, a 
 
 I implemented all of the shaders sucecssfully and had fun tweaking the values and seeing what can be done with them. Some of the shaders had bugs and had to be fixed which took some time, but overall I understood these shaders quickly and most of them implemented smoothly. I really enjoyed seeing how waves can be made with shaders instead of complex C# code. The things I learned in this activity made me more well-prepared for the exam, and I'll be taking a closer look into all of these shaders before the exam.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 The glass shader applies a texture to an object, some extra effects like light intensity, then modifies the transparency channel with an inspector value.
 
 The UV Tiler/Scaler shader uses a sine function to scale the object's UVs on the x and y axis
