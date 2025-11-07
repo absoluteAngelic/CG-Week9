@@ -18,6 +18,8 @@ The Scrolling Water shader uses 2 textures (one for water, one for foam) and scr
 
 The Waves Water shader applies a texture, and uses a sine function to displace the vertices of the object to create waves that move through it using the _Time variable. It can take amplitude, frequency, and speed variables
 
+---
+
 Glass Shader:
 <img width="1705" height="680" alt="image" src="https://github.com/user-attachments/assets/7153f191-f8fe-4f0c-bfb1-ef0b0bc277af" />
 
